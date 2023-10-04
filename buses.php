@@ -5,5 +5,6 @@ require_once("model-buses.php");
 $pageTitle = "Buses";
 include "view-header.php";
 $drivers = selectBuses();
+include "view-drivers.php";
 include "view-footer.php";
 ?>
