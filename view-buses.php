@@ -14,7 +14,7 @@
   ?>
      <tr>
        <td><?php echo $bus['bus_id']; ?></td>
-        <td><?php echo $bus['name']; ?></td>
+        <td><?php echo $bus['bus_name']; ?></td>
        <td><?php echo $bus['capacity']; ?></td>
      </tr>     
   <?php
