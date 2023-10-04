@@ -3,7 +3,7 @@ require_once("util-db.php");
 require_once("model-drivers.php");
   
 $pageTitle = "Drivers";
-include "view-header";
+include "view-header.php";
 $drivers = selectDrivers();
-include "view-footer";
+include "view-footer.php";
 ?>
