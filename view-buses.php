@@ -3,7 +3,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Bus_ID</th>
+        <th>Bus ID</th>
         <th>Name</th>
         <th>Capacity</th>
       </tr>
