@@ -1,3 +1,4 @@
+<?php
 function selectDrivers() {
     try {
         $conn = get_db_connection();
@@ -11,3 +12,4 @@ function selectDrivers() {
         throw $e;
     }
 }
+?>
