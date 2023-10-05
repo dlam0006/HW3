@@ -19,7 +19,6 @@
            ?>
             </ul>
           </p>
-          <p class="card-text"><small class="text-body-secondary">Email: <?php echo $driver['email']; ?></small></p>
         </div>
       </div>
   <?php
