@@ -3,9 +3,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Bus ID</th>
         <th>Bus Name</th>
-        <th>Capacity</th>
         <th>Shift Days</th>
         <th>Start Time</th>
         <th>End Time</th>
@@ -16,9 +14,7 @@
       while ($shift = $shifts->fetch_assoc()) {
   ?>
      <tr>
-       <td><?php echo $shift['bus_id']; ?></td>
         <td><?php echo $shift['bus_name']; ?></td>
-       <td><?php echo $shift['capacity']; ?></td>
        <td><?php echo $shift['shift_days']; ?></td>
        <td><?php echo $shift['start_time']; ?></td>
        <td><?php echo $shift['end_time']; ?></td>
