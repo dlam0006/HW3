@@ -4,7 +4,7 @@
     <thead>
       <tr>
         <th>Bus ID</th>
-        <th>Name</th>
+        <th>Bus Name</th>
         <th>Capacity</th>
         <th>Shift Days</th>
         <th>Start Time</th>
