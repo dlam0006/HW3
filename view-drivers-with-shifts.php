@@ -1,4 +1,4 @@
-<h1>Drivers with Shifts</h1>
+<h1>Driver Shifts</h1>
 <div class="card-group">
   <?php
       while ($driver = $drivers->fetch_assoc()) {
