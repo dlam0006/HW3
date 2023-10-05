@@ -26,3 +26,31 @@
   }
   ?> 
 </div>
+
+<br /><br /><br />
+
+<h3>Route Refernece</h3>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Route Number</th>
+        <th>Origin</th>
+        <th>Destination</th>
+      </tr>
+    </thead>
+    <tbody>
+  <?php
+      while ($bus = $buses->fetch_assoc()) {
+  ?>
+     <tr>
+       <td><?php echo $bus['route_id']; ?></td>
+       <td><?php echo $bus['origin']; ?></td>
+       <td><?php echo $bus['destination']; ?></td>
+     </tr>     
+  <?php
+      }
+  ?> 
+    </tbody>
+  </table>
+</div>
