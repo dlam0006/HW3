@@ -6,6 +6,7 @@
         <th>Bus ID</th>
         <th>Bus Name</th>
         <th>Capacity</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,12 @@
        <td><?php echo $bus['bus_id']; ?></td>
         <td><?php echo $bus['bus_name']; ?></td>
        <td><?php echo $bus['capacity']; ?></td>
+       <td>
+         <form method="post" action="shifts-by-bus.php">
+           <input type="hidden" name="bid" value="<?php echo $bus['bus_id']; ?>">
+            <button type="submit" class="btn btn-primary">Shifts</button>
+          </form>
+       </td>
      </tr>     
   <?php
       }
