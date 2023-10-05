@@ -20,7 +20,7 @@
        <td>
          <form method="post" action="shifts-by-bus.php">
            <input type="hidden" name="bid" value="<?php echo $bus['bus_id']; ?>">
-            <button type="submit" class="btn btn-primary">Shifts</button>
+            <button type="submit" class="btn btn-primary">Schedule</button>
           </form>
        </td>
      </tr>     
