@@ -1,8 +1,8 @@
 <?php
-function selectBuses() {
+function selectRoutes() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT bus_id, bus_name, capacity FROM `Bus`");
+        $stmt = $conn->prepare("SELECT route_id, origin, destination FROM `Route`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
