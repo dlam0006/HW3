@@ -4,7 +4,7 @@
     <thead>
       <tr>
         <th>Bus ID</th>
-        <th>Name</th>
+        <th>Bus Name</th>
         <th>Capacity</th>
       </tr>
     </thead>
