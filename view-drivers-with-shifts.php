@@ -41,12 +41,12 @@
     </thead>
     <tbody>
   <?php
-      while ($bus = $buses->fetch_assoc()) {
+      while ($route = $routes->fetch_assoc()) {
   ?>
      <tr>
-       <td><?php echo $bus['route_id']; ?></td>
-       <td><?php echo $bus['origin']; ?></td>
-       <td><?php echo $bus['destination']; ?></td>
+       <td><?php echo $route['route_id']; ?></td>
+       <td><?php echo $route['origin']; ?></td>
+       <td><?php echo $route['destination']; ?></td>
      </tr>     
   <?php
       }
