@@ -9,17 +9,15 @@
           <p class="card-text">
             <?php
               $buses = selectBusesByDriver($driver['driver_id']);
+              while ($bus = $buses->fetch_assoc()) {
+             ?>
+                
+              }
             ?>
           </p>
           <p class="card-text"><small class="text-body-secondary">Email: <?php echo $driver['email']; ?></small></p>
         </div>
       </div>
-     <tr>
-       <td><?php echo $driver['driver_id']; ?></td>
-       <td><?php echo $driver['name']; ?></td>
-       <td><?php echo $driver['email']; ?></td>
-       <td><a href="buses-by-driver.php?id=<?php echo $driver['driver_id']; ?>">Buses</a></td>
-     </tr>     
   <?php
   }
   ?> 
