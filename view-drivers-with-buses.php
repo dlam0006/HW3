@@ -10,10 +10,11 @@
             <?php
               $buses = selectBusesByDriver($driver['driver_id']);
               while ($bus = $buses->fetch_assoc()) {
-             ?>
-                
-              }
             ?>
+                
+            <?php   
+              }
+           ?>
           </p>
           <p class="card-text"><small class="text-body-secondary">Email: <?php echo $driver['email']; ?></small></p>
         </div>
