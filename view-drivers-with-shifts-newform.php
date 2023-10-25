@@ -18,7 +18,10 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="did" class="form-label">Driver ID</label>
-            <input type="text" class="form-control" id="did" name="did">
+            <?php
+                $driverList = selectDriversForInput();
+                include "view-driver-input-list.php";
+            ?>
           </div>
           <div class="mb-3">
             <label for="bid" class="form-label">Bus ID</label>
