@@ -29,6 +29,13 @@ if (isset($_POST['actionType'])) {
                 echo '<div class="alert alert-danger" role="alert">Error.</div>';
             }
             break;
+        case "Delete2":
+            if (deleteShifts($_POST['sid'])) {
+                echo '<div class="alert alert-success" role="alert">Shift Deleted.</div>';
+            } else {
+                echo '<div class="alert alert-danger" role="alert">Error.</div>';
+            }
+            break;
         case "Delete":
             if (deleteRoutes($_POST['rid'])) {
                 echo '<div class="alert alert-success" role="alert">Route Deleted.</div>';
