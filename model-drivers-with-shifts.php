@@ -28,6 +28,48 @@ function selectBusesByDriver($did) {
     }
 }
 
+function selectDriversForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT driver_id, name FROM `Driver` order by name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function selectBusesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT bus_id, bus_name FROM `Bus` order by bus_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function selectRoutesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT route_id FROM `Route` order by route_id");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function insertShifts($did, $bid, $rid, $sDays, $sStart, $sEnd) {
     try {
         $conn = get_db_connection();
