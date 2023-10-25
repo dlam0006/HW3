@@ -17,15 +17,31 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="bName<?php echo $bus['shift_id']; ?>" class="form-label">Bus Name</label>
-            <input type="text" class="form-control" id="bName<?php echo $bus['shift_id']; ?>" name="bName" value="<?php echo $bus['bus_name']; ?>">
+            <label for="did<?php echo $bus['shift_id']; ?>" class="form-label">Driver ID</label>
+            <input type="text" class="form-control" id="did<?php echo $bus['shift_id']; ?>" name="did" value="<?php echo $bus['driver_id']; ?>">
           </div>
           <div class="mb-3">
-            <label for="bCapacity<?php echo $bus['shift_id']; ?>" class="form-label">Bus Capacity</label>
-            <input type="text" class="form-control" id="bCapacity<?php echo $bus['shift_id']; ?>" name="bCapacity" value="<?php echo $bus['capacity']; ?>">
+            <label for="bid<?php echo $bus['shift_id']; ?>" class="form-label">Bus ID</label>
+            <input type="text" class="form-control" id="bid<?php echo $bus['shift_id']; ?>" name="bid" value="<?php echo $bus['bus_id']; ?>">
           </div>
-            <input type="hidden" name="bid" value="<?php echo $bus['shift_id']; ?>">
-            <input type="hidden" name="actionType" value="Edit">
+          <div class="mb-3">
+            <label for="rid<?php echo $bus['shift_id']; ?>" class="form-label">Route ID</label>
+            <input type="text" class="form-control" id="rid<?php echo $bus['shift_id']; ?>" name="rid" value="<?php echo $bus['route_id']; ?>">
+          </div>
+          <div class="mb-3">
+            <label for="sDays<?php echo $bus['shift_id']; ?>" class="form-label">Shift Days</label>
+            <input type="text" class="form-control" id="sDays<?php echo $bus['shift_id']; ?>" name="sDays" value="<?php echo $bus['shift_days']; ?>">
+          </div>
+            <div class="mb-3">
+            <label for="sStart<?php echo $bus['shift_id']; ?>" class="form-label">Start Time</label>
+            <input type="text" class="form-control" id="sStart<?php echo $bus['shift_id']; ?>" name="sStart" value="<?php echo $bus['start_time']; ?>">
+          </div>
+          <div class="mb-3">
+            <label for="sEnd<?php echo $bus['shift_id']; ?>" class="form-label">End Time</label>
+            <input type="text" class="form-control" id="sEnd<?php echo $bus['shift_id']; ?>" name="sEnd" value="<?php echo $bus['end_time']; ?>">
+          </div>
+            <input type="hidden" name="sid" value="<?php echo $bus['shift_id']; ?>">
+            <input type="hidden" name="actionType" value="Edit2">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
