@@ -28,7 +28,17 @@
 
 <br /><br /><br />
 
-<h3>Route Refernece</h3>
+<div class="row">
+  <div class="col">
+    <h3>Route Refernece</h3>
+  </div>
+  <div class="col-auto">
+    <?php
+    include "view-routes-newform.php";
+    ?>
+  </div>
+</div>
+
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -36,6 +46,8 @@
         <th>Route Number</th>
         <th>Origin</th>
         <th>Destination</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
