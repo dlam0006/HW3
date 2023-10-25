@@ -15,7 +15,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form method="post" action="">
           <div class="mb-3">
             <label for="bName" class="form-label">Bus Name</label>
             <input type="text" class="form-control" id="bName" name="bName">
