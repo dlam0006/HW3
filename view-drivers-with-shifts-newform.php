@@ -40,7 +40,7 @@
             <label for="sEnd" class="form-label">End Time</label>
             <input type="text" class="form-control" id="sEnd" name="sEnd">
           </div>
-            <input type="hidden" name="actionType2" value="Add2">
+            <input type="hidden" name="actionType" value="Add2">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
