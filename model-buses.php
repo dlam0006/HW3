@@ -30,7 +30,7 @@ function insertBuses($bName, $bCapacity) {
 function updateBuses($bName, $bCapacity, $bid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `Bus` set `bus_name` = ?, `capacity` where bus_id = ?");
+        $stmt = $conn->prepare("UPDATE `Bus` SET `bus_name` = ?, `capacity` = ? WHERE `Bus`.`bus_id` = ?");
         $stmt->bind_param("sii", $bName, $bCapacity, $bid);
         $success = $stmt->execute();
         $conn->close();
