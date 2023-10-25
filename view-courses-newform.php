@@ -18,11 +18,11 @@
         <form>
           <div class="mb-3">
             <label for="bName" class="form-label">Bus Name</label>
-            <input type="email" class="form-control" id="bName" name="bName">
+            <input type="text" class="form-control" id="bName" name="bName">
           </div>
           <div class="mb-3">
             <label for="bCapacity" class="form-label">Bus Capacity</label>
-            <input type="email" class="form-control" id="bCapacity" name="bCapacity">
+            <input type="text" class="form-control" id="bCapacity" name="bCapacity">
           </div>
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
