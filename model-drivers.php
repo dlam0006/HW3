@@ -17,7 +17,7 @@ function insertDrivers($dName, $dEmail) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `Driver` (`name`, `email`) VALUES (?, ?)");
-        $stmt->bind_param("si", $dName, $dEmail);
+        $stmt->bind_param("ss", $dName, $dEmail);
         $success = $stmt->execute();
         $conn->close();
         return $success;
