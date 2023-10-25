@@ -29,6 +29,9 @@
         <td><?php echo $bus['bus_name']; ?></td>
        <td><?php echo $bus['capacity']; ?></td>
        <td>
+         <?php
+         include "view-buses-editform.php";
+         ?>
        </td>
        <td>
          <form method="post" action="">
