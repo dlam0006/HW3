@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-auto">
                       <?php
-                      include "view-drivers-with-shifts-newform.php";
+                      include "view-drivers-with-shifts-editform.php";
                       ?>
                     </div>
                     <div>
