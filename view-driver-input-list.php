@@ -1,14 +1,9 @@
 <select class="form-select" id="did" name="did">
   <?php
-    while ($DriverItem = $
+    while ($DriverItem = $driverList->fetch_assoc()) {
   ?>
-
+  <option value="<?php echo $DriverItem['driver_id']; ?>"><?php echo $DriverItem['name']; ?></option>
   <?php
-
+  }
   ?>
-
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
 </select>
