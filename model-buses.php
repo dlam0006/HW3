@@ -20,7 +20,7 @@ function insertBuses($bName, $bCapacity) {
         $stmt->bind_param("ss", $bName, $bCapacity);
         $success = $stmt->execute();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
@@ -34,7 +34,7 @@ function updateBuses($bName, $bCapacity, $bid) {
         $stmt->bind_param("ssi", $bName, $bCapacity, $bid);
         $success = $stmt->execute();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
@@ -48,7 +48,7 @@ function deleteBuses($bid) {
         $stmt->bind_param("i", $bid);
         $success = $stmt->execute();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
