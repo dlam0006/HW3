@@ -6,6 +6,8 @@ require_once("model-routes.php");
 $pageTitle = "Drivers with Shifts";
 include "view-header.php";
 $drivers = selectDrivers();
+$routes = selectRoutes();
+include "view-drivers-with-shifts.php";
 
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
@@ -33,8 +35,5 @@ if (isset($_POST['actionType'])) {
     }
 }
 
-
-$routes = selectRoutes();
-include "view-drivers-with-shifts.php";
 include "view-footer.php";
 ?>
