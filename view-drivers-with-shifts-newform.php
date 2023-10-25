@@ -20,6 +20,7 @@
             <label for="did" class="form-label">Driver ID</label>
             <?php
                 $driverList = selectDriversForInput();
+                $selectedDriver = 0;
                 include "view-driver-input-list.php";
             ?>
           </div>
