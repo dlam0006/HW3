@@ -22,7 +22,22 @@
               $buses = selectBusesByDriver($driver['driver_id']);
               while ($bus = $buses->fetch_assoc()) {
             ?>
-                <li class="list-group-item"><?php echo $bus['shift_days']; ?> - <?php echo $bus['start_time']; ?> - <?php echo $bus['end_time']; ?> - <?php echo $bus['bus_name']; ?> - Route <?php echo $bus['route_id']; ?></li>
+                
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col">
+                       <?php echo $bus['shift_days']; ?> - <?php echo $bus['start_time']; ?> - <?php echo $bus['end_time']; ?> - <?php echo $bus['bus_name']; ?> - Route <?php echo $bus['route_id']; ?>
+                    </div>
+                    <div class="col-auto">
+                      <?php
+                      include "view-drivers-with-shifts-newform.php";
+                      ?>
+                    </div>
+                    <div>
+                      
+                    </div>  
+                  </div>
+               </li>
 
             <?php   
               }
