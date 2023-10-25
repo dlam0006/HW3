@@ -32,8 +32,6 @@
                       <?php
                       include "view-drivers-with-shifts-editform.php";
                       ?>
-                    </div>
-                    <div>
                       <form method="post" action="">
                        <input type="hidden" name="sid" value="<?php echo $shift['shift_id']; ?>">
                        <input type="hidden" name="actionType" value="Delete2">
@@ -43,7 +41,8 @@
                           </svg>
                         </button>
                       </form>
-                    </div>  
+                    </div>
+ 
                   </div>
                </li>
 
