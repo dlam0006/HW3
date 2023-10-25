@@ -31,7 +31,7 @@ function updateBuses($bName, $bCapacity, $bid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `Bus` set `bus_name` = ?, `capacity` where bus_id = ?");
-        $stmt->bind_param("ssi", $bName, $bCapacity, $bid);
+        $stmt->bind_param("sii", $bName, $bCapacity, $bid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
