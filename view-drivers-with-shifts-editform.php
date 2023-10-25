@@ -17,7 +17,7 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="did<?php echo $bus['shift_id']; ?>" class="form-label">Driver</label>
+            <label for="did<?php echo $bus['shift_id']; ?>" class="form-label">Driver ID</label>
             <?php
                 $driverList = selectDriversForInput();
                 $selectedDriver = $bus['driver_id'];
