@@ -14,6 +14,13 @@ if (isset($_POST['actionType'])) {
                 echo '<div class="alert alert-danger" role="alert">Error.</div>';
             }
             break;
+        case "Edit":
+            if (updateBuses($_POST['bName'], $_POST['bCapacity'], $_POST['bid'])) {
+                echo '<div class="alert alert-success" role="alert">Bus Edited.</div>';
+            } else {
+                echo '<div class="alert alert-danger" role="alert">Error.</div>';
+            }
+            break;
         case "Delete":
             if (deleteBuses($_POST['bid'])) {
                 echo '<div class="alert alert-success" role="alert">Bus Deleted.</div>';
