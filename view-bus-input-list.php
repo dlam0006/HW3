@@ -2,7 +2,7 @@
   <?php
     while ($BusItem = $busList->fetch_assoc()) {
       $selText = "";
-      if ($selectedBus == $BusItem['bus_id']) {
+      if ($selectedDriver == $DriverItem['driver_id']) {
         $selText = " selected";
       }
   ?>
