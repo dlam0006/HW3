@@ -26,7 +26,11 @@
           </div>
           <div class="mb-3">
             <label for="bid<?php echo $bus['shift_id']; ?>" class="form-label">Bus ID</label>
-            <input type="text" class="form-control" id="bid<?php echo $bus['shift_id']; ?>" name="bid" value="<?php echo $bus['bus_id']; ?>">
+            <?php
+                $busList = selectBusesForInput();
+                $selectedBus = $bus['bus_id'];
+                include "view-bus-input-list.php";
+            ?>
           </div>
           <div class="mb-3">
             <label for="rid<?php echo $bus['shift_id']; ?>" class="form-label">Route ID</label>
