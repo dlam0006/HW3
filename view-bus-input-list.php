@@ -1,8 +1,8 @@
-<select class="form-select" id="did" name="did">
+<select class="form-select" id="bid" name="bid">
   <?php
     while ($BusItem = $busList->fetch_assoc()) {
       $selText = "";
-      if ($selectedDriver == $DriverItem['driver_id']) {
+      if ($selectedBus == $BusItem['bus_id']) {
         $selText = " selected";
       }
   ?>
