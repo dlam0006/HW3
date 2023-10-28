@@ -26,7 +26,11 @@
           </div>
           <div class="mb-3">
             <label for="bid" class="form-label">Bus ID</label>
-            <input type="text" class="form-control" id="bid" name="bid">
+            <?php
+                $busList = selectBusesForInput();
+                $selectedBus = 0;
+                include "view-bus-input-list.php";
+            ?>
           </div>
           <div class="mb-3">
             <label for="rid" class="form-label">Route ID</label>
