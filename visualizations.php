@@ -1,10 +1,10 @@
 <?php
 require_once("util-db.php");
-require_once("model-drivers.php");
+require_once("model-visualizations.php");
   
-$pageTitle = "Drivers";
+$pageTitle = "Visualizations";
 include "view-header.php";
 $drivers = selectDrivers();
-include "view-drivers.php";
+include "view-visualizations.php";
 include "view-footer.php";
 ?>
