@@ -151,7 +151,6 @@
 
     <!-- Your JavaScript code -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
 
 Highcharts.chart('container', {
     chart: {
