@@ -36,12 +36,14 @@
 
 </script>
 
-
+<div style="width: 600px; height: 600px;">
+  <canvas id="myChart2"></canvas>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 <script>
-   
+     const ctx = document.getElementById('myChart2');
       
         var options = {
           series: [{
