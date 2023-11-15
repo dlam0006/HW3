@@ -43,7 +43,7 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 <script>
-     const ctx = document.getElementById('myChart2');
+     const ctx2 = document.getElementById('myChart2');
       
         var options = {
           series: [{
@@ -116,7 +116,7 @@
         }
         };
 
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        var chart = new ApexCharts(ctx2, options);
         chart.render();
       
 </script>
