@@ -124,7 +124,7 @@
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Route', 'Route Count'],
+          ['Route', 'Route Count'],<br>
           <?php
                 while ($route = $routes->fetch_assoc()) {
                   echo "['Route " . $['r.route_id'] . "', " . $['route_count'] . "],\n";
