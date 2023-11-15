@@ -2,7 +2,7 @@
 
    
 <div>
-  <canvas id="myChart"></canvas>
+  <canvas id="myChart" width="300" height="300"></canvas>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
