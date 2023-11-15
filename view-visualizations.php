@@ -50,9 +50,8 @@
             name: 'Number of Shifts',
             data: [
               <?php
-$drivers = selectDrivers();
-                while ($driver = $drivers->fetch_assoc()) {
-                  echo $driver['num_shifts'] . ", ";
+                while ($bus = $buses->fetch_assoc()) {
+                  echo $bus['num_shifts'] . ", ";
             }
             ?>
             ]
@@ -84,9 +83,9 @@ $drivers = selectDrivers();
             },
             categories: [
             <?php
-            $drivers = selectDrivers();
-                while ($driver = $drivers->fetch_assoc()) {
-                  echo "'" . $driver['name'] . "', ";
+            $buses = selectBuses();
+                while ($bus = $buses->fetch_assoc()) {
+                  echo "'" . $bus['bus_name'] . "', ";
             }
             ?>
             ],
