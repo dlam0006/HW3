@@ -144,8 +144,7 @@
     <!-- Include Highcharts library -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/packed-bubble.js"></script>
-</head>
-<body>
+
     <!-- Container for the chart -->
     <div id="container" style="height: 500px;"></div>
 
