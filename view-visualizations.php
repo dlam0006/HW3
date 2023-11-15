@@ -123,10 +123,10 @@
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Route', 'Route Count'],<br>
+          ['Route', 'Route Count'],
           <?php
                 while ($route = $routes->fetch_assoc()) {
-                  echo "['Route " . $route['origin'] . "', " . $route['route_count'] . "],\n";
+                  echo "['Route " . $route['origin'] . "', " . $route['route_count'] . "], ";
             }
             ?>
         ]);
