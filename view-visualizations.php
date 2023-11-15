@@ -124,17 +124,12 @@
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
+          ['Route', 'Route Count'],
           <?php
                 while ($route = $routes->fetch_assoc()) {
-                  echo $bus['num_shifts'] . ", ";
+                  echo "['Route " . $['r.route_id'] . "', " . $['route_count'] . "],\n";
             }
             ?>
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
         ]);
 
         var options = {
