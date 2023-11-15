@@ -95,7 +95,7 @@
             title: {
                 text: 'Number of Shifts',
             },
-          tickAmount: 1
+          tickAmount: 2
         },
         fill: {
             type: 'gradient',
