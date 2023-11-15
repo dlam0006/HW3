@@ -1,8 +1,8 @@
 <h1>Analysis Visualizations</h1>
 
    
-<div>
-  <canvas id="myChart" width="100" height="100"></canvas>
+<div style="width: 300px; height: 300px;">
+  <canvas id="myChart"></canvas>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
