@@ -126,7 +126,7 @@
           ['Route', 'Route Count'],
           <?php
                 while ($route = $routes->fetch_assoc()) {
-                  echo "['Route " . $route['origin'] . "', " . $route['route_count'] . "], ";
+                  echo "['Route " . $route['r.route_id'] . "', " . $route['route_count'] . "], ";
             }
             ?>
         ]);
