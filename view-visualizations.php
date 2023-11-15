@@ -37,14 +37,11 @@
 </script>
 
 
-<!-- Create a container for the chart -->
 <div id="chart"></div>
 
-<!-- Include the ApexCharts JavaScript file -->
 <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.26.0/dist/apexcharts.min.js"></script>
 
 <script>
-    // Your chart options and rendering code
     var options = {
         series: [{
             name: 'Number of Shifts',
@@ -116,6 +113,8 @@
     chart.render();
 </script>
 
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -141,7 +140,4 @@
         chart.draw(data, options);
       }
     </script>
-  </head>
-  
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
 
