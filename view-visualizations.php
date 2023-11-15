@@ -50,27 +50,13 @@
             name: 'Number of Shifts',
             data: [
               <?php
+$drivers = selectDrivers();
                 while ($driver = $drivers->fetch_assoc()) {
                   echo $driver['num_shifts'] . ", ";
             }
             ?>
             ]
         }],
-        annotations: {
-            points: [{
-                x: 'Bananas',
-                seriesIndex: 0,
-                label: {
-                    borderColor: '#775DD0',
-                    offsetY: 0,
-                    style: {
-                        color: '#fff',
-                        background: '#775DD0',
-                    },
-                    text: 'Bananas are good',
-                }
-            }]
-        },
         chart: {
             height: 350,
             type: 'bar',
