@@ -47,8 +47,14 @@
     // Your chart options and rendering code
     var options = {
         series: [{
-            name: 'Servings',
-            data: [44, 55, 41, 67, 22, 43, 21, 33, 45, 31, 87, 65, 35]
+            name: 'Number of Shifts',
+            data: [
+              <?php
+                while ($driver = $drivers->fetch_assoc()) {
+                  echo $driver['num_shifts'] . ", ";
+            }
+            ?>
+            ]
         }],
         annotations: {
             points: [{
@@ -90,14 +96,19 @@
             labels: {
                 rotate: -45
             },
-            categories: ['Apples', 'Oranges', 'Strawberries', 'Pineapples', 'Mangoes', 'Bananas',
-                'Blackberries', 'Pears', 'Watermelons', 'Cherries', 'Pomegranates', 'Tangerines', 'Papayas'
+            categories: [
+            <?php
+            $drivers = selectDrivers();
+                while ($driver = $drivers->fetch_assoc()) {
+                  echo "'" . $driver['name'] . "', ";
+            }
+            ?>
             ],
             tickPlacement: 'on'
         },
         yaxis: {
             title: {
-                text: 'Servings',
+                text: 'Number of Shifts',
             },
         },
         fill: {
