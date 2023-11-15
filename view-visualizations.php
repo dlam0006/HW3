@@ -333,5 +333,6 @@ Highcharts.chart('container', {
             name: 'Cyprus',
             value: 7.2
         }]
-    };
- </script>
+  });
+        });
+    </script>
