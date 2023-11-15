@@ -1,6 +1,6 @@
 <h1>Analysis Visualizations</h1>
   
-<div style="width: 600px; height: 600px;">
+<div style="width: 300px; height: 300px;">
   <canvas id="myChart"></canvas>
 </div>
 
