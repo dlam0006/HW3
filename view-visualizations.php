@@ -140,3 +140,36 @@
         chart.draw(data, options);
       }
     </script>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <div id="myChart2"></div>
+
+  <script>
+    // Sample data
+    var data = [{
+      type: 'bar',
+      orientation: 'h',
+      x: [10, 20, 30],
+      y: ['Label 1', 'Label 2', 'Label 3'],
+      marker: {
+        color: 'rgba(75, 192, 192, 0.6)',
+        line: {
+          color: 'rgba(75, 192, 192, 1)',
+          width: 1
+        }
+      }
+    }];
+
+    // Layout configuration
+    var layout = {
+      title: 'Horizontal Bar Chart with Plotly.js',
+      xaxis: { title: 'Values' },
+      yaxis: { title: 'Labels' }
+    };
+
+    // Create the chart
+    Plotly.newPlot('myChart2', data, layout);
+  </script>
+
+
