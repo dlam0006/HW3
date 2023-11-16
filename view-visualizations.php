@@ -132,7 +132,7 @@
       <h3>Number of Shifts for each Drive per Week</h3>
       <canvas id="myChart"></canvas>
     </div>
-    <center><h3>Route Count per Week</h3></center>
+    <h3>Route Count per Week</h3>
     <div id="piechart" style="width: 600px; height: 600px;"></div>
   </div>
 
@@ -185,7 +185,7 @@
         ]);
 
         var options = {
-      chartArea: { width: '200%', height: '80%' }, // Adjust the width and height as needed
+      chartArea: { width: '100%', height: '80%' },
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
