@@ -129,9 +129,8 @@
 </script>
 
 
-<h3>Number of Shifts for each Drive per Week</h3>
-
 <div class="chart-container">
+   <h3>Number of Shifts for each Drive per Week</h3>
     <div style="width: 600px; height: 600px;">
       <canvas id="myChart"></canvas>
     </div>
