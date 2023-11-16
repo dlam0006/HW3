@@ -128,12 +128,12 @@
     chart.render();
 </script>
 <div class="chart-container">
-    <div style="width: 400px; height: 400px;">
+    <div style="width: 6000px; height: 600px;">
       <h3>Number of Shifts for each Drive per Week</h3>
       <canvas id="myChart"></canvas>
     </div>
     <h3>Route Count per Week</h3>
-    <div id="piechart" style="width: 800px; height: 400px;"></div>
+    <div id="piechart" style="width: 600px; height: 600px;"></div>
   </div>
 
 
@@ -186,6 +186,8 @@
 
         var options = {
           title: 'Routes Count'
+          width: 600,
+          height: 600
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
