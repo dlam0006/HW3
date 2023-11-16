@@ -174,7 +174,7 @@
     }];
 
     var layout = {
-      title: 'Horizontal Bar Chart with Plotly.js',
+      title: 'Number of Trips per Day',
       xaxis: { title: 'Number of Trips' },
       yaxis: { title: 'Days' }
     };
