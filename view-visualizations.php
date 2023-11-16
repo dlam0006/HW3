@@ -184,9 +184,12 @@
             ?>
         ]);
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var options = {
+      chartArea: { width: '80%', height: '80%' }, // Adjust the width and height as needed
+    };
 
-        chart.draw(data);
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
       }
     </script>
 
