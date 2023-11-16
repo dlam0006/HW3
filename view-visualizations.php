@@ -1,3 +1,13 @@
+  <style>
+    .chart-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .chart-container > div {
+      flex: 1;
+    }
+  </style>
+
 <h1>Analysis Visualizations</h1>
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -120,9 +130,15 @@
 
 
 <h3>Number of Shifts for each Drive per Week</h3>
-<div style="width: 600px; height: 600px;">
-  <canvas id="myChart"></canvas>
-</div>
+
+<div class="chart-container">
+    <div style="width: 600px; height: 600px;">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div id="piechart" style="width: 600px; height: 600px;"></div>
+  </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
  
@@ -156,7 +172,6 @@
 </script>
 
 <h3>Route Count per Week</h3>
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
