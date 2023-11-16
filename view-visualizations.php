@@ -135,7 +135,7 @@
     <div style="width: 600px; height: 600px;">
       <canvas id="myChart"></canvas>
     </div>
-    <h3 style="text-align: center; font-weight: bold;">Route Count per Week</h3>
+    <h3>Route Count per Week</h3>
     <div id="piechart" style="width: 600px; height: 600px;"></div>
   </div>
 
