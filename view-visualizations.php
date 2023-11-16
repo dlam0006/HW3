@@ -185,7 +185,7 @@
         ]);
 
         var options = {
-      chartArea: { width: '150%', height: '100%' }, // Adjust the width and height as needed
+      chartArea: { width: '200%', height: '80%' }, // Adjust the width and height as needed
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
