@@ -146,12 +146,24 @@
   <div id="myChart2"></div>
 
   <script>
-    // Sample data
     var data = [{
       type: 'bar',
       orientation: 'h',
-      x: [10, 20, 30],
-      y: ['Label 1', 'Label 2', 'Label 3'],
+      x: [
+        <?php
+                while ($day = $days->fetch_assoc()) {
+                  echo $day['num_trips'] . ", ";
+            }
+            ?>
+      ],
+      y: [
+        <?php
+            $days = selectDays();
+                while ($day = $days->fetch_assoc()) {
+                  echo "'" . $day['shift_days'] . "', ";
+            }
+            ?>
+      ],
       marker: {
         color: 'rgba(75, 192, 192, 0.6)',
         line: {
@@ -161,14 +173,12 @@
       }
     }];
 
-    // Layout configuration
     var layout = {
       title: 'Horizontal Bar Chart with Plotly.js',
-      xaxis: { title: 'Values' },
-      yaxis: { title: 'Labels' }
+      xaxis: { title: 'Number of Trips' },
+      yaxis: { title: 'Days' }
     };
 
-    // Create the chart
     Plotly.newPlot('myChart2', data, layout);
   </script>
 
