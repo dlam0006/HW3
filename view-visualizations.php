@@ -128,12 +128,12 @@
     chart.render();
 </script>
 <div class="chart-container">
-    <div style="width: 800px; height: 600px;">
+    <div style="width: 1000px; height: 600px;">
       <h3>Number of Shifts for each Drive per Week</h3>
       <canvas id="myChart"></canvas>
     </div>
     <h3>Route Count per Week</h3>
-    <div id="piechart" style="width: 400px; height: 600px;"></div>
+    <div id="piechart" style="width: 200px; height: 600px;"></div>
   </div>
 
 
