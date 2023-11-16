@@ -132,8 +132,10 @@
       <h3>Number of Shifts for each Drive per Week</h3>
       <canvas id="myChart"></canvas>
     </div>
-    <h3>Route Count per Week</h3>
-    <div id="piechart" style="width: 600px; height: 600px;"></div>
+
+    <div id="piechart" style="width: 600px; height: 600px;">
+      <h3>Route Count per Week</h3>
+    </div>
   </div>
 
 
