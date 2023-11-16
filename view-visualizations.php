@@ -128,7 +128,7 @@
     chart.render();
 </script>
 <div class="chart-container">
-    <div style="width: 6000px; height: 600px;">
+    <div style="width: 600px; height: 600px;">
       <h3>Number of Shifts for each Drive per Week</h3>
       <canvas id="myChart"></canvas>
     </div>
@@ -185,7 +185,6 @@
         ]);
 
         var options = {
-          title: 'Routes Count',
           width: 600,
           height: 600
         };
