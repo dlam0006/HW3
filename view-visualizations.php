@@ -184,14 +184,9 @@
             ?>
         ]);
 
-        var options = {
-          width: 600,
-          height: 600
-        };
-
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-        chart.draw(data, options);
+        chart.draw(data);
       }
     </script>
 
