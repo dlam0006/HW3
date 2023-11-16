@@ -1,42 +1,47 @@
 <h1>Analysis Visualizations</h1>
-  
-<div style="width: 600px; height: 600px;">
-  <canvas id="myChart"></canvas>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
- 
-<script>
-  const ctx = document.getElementById('myChart');
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-  new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-    datasets: [{
-        data: [
-            <?php
-                while ($driver = $drivers->fetch_assoc()) {
-                  echo $driver['num_shifts'] . ", ";
+<h3>Number of Trips per Day</h3>
+  <div id="myChart2"></div>
+
+  <script>
+    var data = [{
+      type: 'bar',
+      orientation: 'h',
+      x: [
+        <?php
+                while ($day = $days->fetch_assoc()) {
+                  echo $day['num_trips'] . ", ";
             }
             ?>
-        ]
-    }],
-
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: [
-            <?php
-            $drivers = selectDrivers();
-                while ($driver = $drivers->fetch_assoc()) {
-                  echo "'" . $driver['name'] . "', ";
+      ],
+      y: [
+        <?php
+            $days = selectDays();
+                while ($day = $days->fetch_assoc()) {
+                  echo "'" . $day['shift_days'] . "', ";
             }
             ?>
-    ]
-}
-  });
+      ],
+      marker: {
+        color: 'rgba(75, 192, 192, 0.6)',
+        line: {
+          color: 'rgba(75, 192, 192, 1)',
+          width: 1
+        }
+      }
+    }];
 
-</script>
+    var layout = {
+      xaxis: { title: 'Number of Trips' },
+      yaxis: { title: 'Days' }
+    };
 
+    Plotly.newPlot('myChart2', data, layout);
+  </script>
 
+<h3>Number of Trips a Bus Makes a Week</h3>
 <div id="chart"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.26.0/dist/apexcharts.min.js"></script>
@@ -113,6 +118,44 @@
     chart.render();
 </script>
 
+
+<h3>Number of Shifts for each Drive per Week</h3>
+<div style="width: 600px; height: 600px;">
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+    datasets: [{
+        data: [
+            <?php
+                while ($driver = $drivers->fetch_assoc()) {
+                  echo $driver['num_shifts'] . ", ";
+            }
+            ?>
+        ]
+    }],
+
+    labels: [
+            <?php
+            $drivers = selectDrivers();
+                while ($driver = $drivers->fetch_assoc()) {
+                  echo "'" . $driver['name'] . "', ";
+            }
+            ?>
+    ]
+}
+  });
+
+</script>
+
+<h3>Route Count per Week</h3>
     <div id="piechart" style="width: 900px; height: 500px;"></div>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -140,46 +183,5 @@
         chart.draw(data, options);
       }
     </script>
-
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-  <div id="myChart2"></div>
-
-  <script>
-    var data = [{
-      type: 'bar',
-      orientation: 'h',
-      x: [
-        <?php
-                while ($day = $days->fetch_assoc()) {
-                  echo $day['num_trips'] . ", ";
-            }
-            ?>
-      ],
-      y: [
-        <?php
-            $days = selectDays();
-                while ($day = $days->fetch_assoc()) {
-                  echo "'" . $day['shift_days'] . "', ";
-            }
-            ?>
-      ],
-      marker: {
-        color: 'rgba(75, 192, 192, 0.6)',
-        line: {
-          color: 'rgba(75, 192, 192, 1)',
-          width: 1
-        }
-      }
-    }];
-
-    var layout = {
-      title: 'Number of Trips per Day',
-      xaxis: { title: 'Number of Trips' },
-      yaxis: { title: 'Days' }
-    };
-
-    Plotly.newPlot('myChart2', data, layout);
-  </script>
 
 
