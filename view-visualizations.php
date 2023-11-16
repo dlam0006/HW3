@@ -127,11 +127,9 @@
     var chart = new ApexCharts(document.querySelector("#chart"), options);
     chart.render();
 </script>
-
-
 <div class="chart-container">
-   <h3>Number of Shifts for each Drive per Week</h3>
     <div style="width: 600px; height: 600px;">
+      <h3>Number of Shifts for each Drive per Week</h3>
       <canvas id="myChart"></canvas>
     </div>
     <h3>Route Count per Week</h3>
