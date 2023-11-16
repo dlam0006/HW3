@@ -185,7 +185,7 @@
         ]);
 
         var options = {
-          title: 'Routes Count'
+          title: 'Routes Count',
           width: 600,
           height: 600
         };
