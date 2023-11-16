@@ -128,7 +128,7 @@
     chart.render();
 </script>
 <div class="chart-container">
-    <div style="width: 300px; height: 300px;">
+    <div style="width: 500px; height: 500px;">
       <h3>Number Shifts per Week by Driver</h3>
       <canvas id="myChart"></canvas>
     </div>
