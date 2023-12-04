@@ -1,4 +1,18 @@
-<h1>Bus Driver Weekly Pay Calculator</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+<title>Employee Pay</title>
+</head>
+<body>
+     
+     <h1>Bus Driver Weekly Pay Calculator</h1>
 
     <label for="employeeId">Enter Employee ID:</label>
     <input type="text" id="employeeId" placeholder="Enter employee ID">
@@ -63,3 +77,5 @@ function calculateWeeklyPay(hoursWorked, employeeId) {
         }
     </script>
 
+        </body>
+        </html>
