@@ -2,16 +2,61 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-    <br/>
-    <h1>Final Project</h1><br/>
-<p>This is a database for a bus transportation company.</p> <br/>
-<p>Tab 1 (Drivers): Drivers and the buses they drive (with schedule)</p>
-<p>Tab 2 (Buses): Buses and their working schedule</p>
-<p>Tab 3 (Drivers with Shifts): Divers and their shifts along with the route they take during each shift</p>
-<p>Tab 4 (Employees Weekly Pay): The amount of the hours each employee works per week and the pay calculation</p>
-<p>Tab 5 (Routes Driven Before Refueling): Calculating the amount of routes a driver can take before needing to refuel</p>
-<p>Tab 6 (Route Map): Shows the map of an overview of the stops on the routes</p><br/>
-<p>This database uses the tables: Drivers, Buses, Shifts, and Routes.</p>
+
+<style>
+    body {
+        background-color: #f0f8ff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1, h2, h3 {
+        color: #333;
+    }
+
+    p {
+        color: #555;
+    }
+</style>
+
+<div class="container">
+    <div style="text-align: center; margin-top: 20px;">
+        <img src="/Users/bongiswadlamini/Downloads/MIS 4013 E-Commerce & Web Design/Logo.png" alt="Bus Transportation Image">
+    </div>
+
+    <div style="margin-top: 20px;">
+        <h1>Bellah Buses Resource Planning System</h1>
+        <p>This platform serves as a comprehensive database for a bus transportation company, facilitating efficient resource planning and management.</p>
+
+        <h2>Site Naviagtion</h2>
+        <p>This database comprises several tabs, each dedicated to a specific aspect of the transportation operations:</p>
+
+        <ol>
+            <li><strong>Drivers:</strong> Displays information about drivers, the buses they operate, and their schedules.</li>
+            <li><strong>Buses:</strong> Provides details about buses and their working schedules.</li>
+            <li><strong>Drivers with Shifts:</strong> Shows drivers, their shifts, and the routes they take during each shift.</li>
+            <li><strong>Employees Weekly Pay:</strong> Calculates the hours each employee works per week and determines their pay.</li>
+            <li><strong>Routes Driven Before Refueling:</strong> Estimates the number of routes a driver can take before needing to refuel.</li>
+            <li><strong>Route Map:</strong> Displays an overview map of the stops on the routes.</li>
+        </ol>
+
+    </div>
+</div>
+
 <?php
 include "view-footer.php";
 ?>
