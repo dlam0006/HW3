@@ -12,7 +12,7 @@ include "view-header.php";
     }
 
     .container {
-        max-width: 800px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
         background-color: #fff;
@@ -35,7 +35,7 @@ include "view-header.php";
 
 <div class="container">
     <div style="text-align: center; margin-top: 20px;">
-        <img src="/Users/bongiswadlamini/Downloads/MIS 4013 E-Commerce & Web Design/Logo.png" alt="Bus Transportation Image">
+        <img src="Logo.png" alt="Bus Transportation Image">
     </div>
 
     <div style="margin-top: 20px;">
