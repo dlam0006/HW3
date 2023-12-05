@@ -24,8 +24,9 @@ include "view-header.php";
         height: auto;
     }
 
-    h1, h2, h3 {
+    h1, h2, h4 {
         color: #333;
+        text-align: center;
     }
 
     p {
@@ -34,15 +35,15 @@ include "view-header.php";
 </style>
 
 <div class="container">
-    <div style="text-align: center; margin-top: 20px;">
-        <img src="Logo.png" alt="Bus Transportation Image">
-    </div>
 
     <div style="margin-top: 20px;">
-        <h1>Bellah Buses Resource Planning System</h1>
+        <h2>Bellah Buses Resource Planning System</h2>
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="Logo.png" alt="Bus Transportation Image">
+            </div>
         <p>This platform serves as a comprehensive database for a bus transportation company, facilitating efficient resource planning and management.</p>
 
-        <h2>Site Naviagtion</h2>
+        <h4>Site Naviagtion</h4>
         <p>This database comprises several tabs, each dedicated to a specific aspect of the transportation operations:</p>
 
         <ol>
