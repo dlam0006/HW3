@@ -7,6 +7,7 @@ include "view-header.php";
     body {
         background-color: #f0f8ff;
         font-family: Arial, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         margin: 0;
         padding: 0;
     }
@@ -41,9 +42,9 @@ include "view-header.php";
             <div style="text-align: center; margin-top: 20px;">
                 <img src="Logo.png" alt="Bus Transportation Image">
             </div>
-        <p>This platform serves as a comprehensive database for a bus transportation company, facilitating efficient resource planning and management.</p>
-
+        
         <h4>Site Naviagtion</h4>
+        <p>This platform serves as a comprehensive database for a bus transportation company, facilitating efficient resource planning and management.</p>
         <p>This database comprises several tabs, each dedicated to a specific aspect of the transportation operations:</p>
 
         <ol>
