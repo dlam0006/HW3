@@ -3,7 +3,7 @@ require_once("util-db.php");
 require_once("model-drivers-with-shifts.php");
 require_once("model-routes.php");
 
-$pageTitle = "Drivers with Shifts";
+$pageTitle = "Shifts and Routes";
 include "view-header.php";
 include "css.php";
 
