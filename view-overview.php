@@ -86,12 +86,98 @@ include "css.php";
 </script>
 
 
+<!---------------------------------------->
+
+
+<h3>Number Shifts per Week by Driver</h3>
+<div id="chart2"></div>
+
+
+<script>
+    var options = {
+        series: [{
+            name: 'Number of Shifts',
+            data: [
+              <?php
+                while ($driver = $drivers->fetch_assoc()) {
+                  echo $driver['num_shifts'] . ", ";
+            }
+            ?>
+            ]
+        }],
+        chart: {
+            height: 350,
+            type: 'bar',
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 10,
+                columnWidth: '50%',
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            width: 2
+        },
+        grid: {
+            row: {
+                colors: ['#fff', '#f2f2f2']
+            }
+        },
+        xaxis: {
+            labels: {
+                rotate: -45
+            },
+            categories: [
+            <?php
+            $drivers = selectDrivers();
+                while ($driver = $drivers->fetch_assoc()) {
+                  echo "'" . $driver['name'] . "', ";
+            }
+            ?>
+            ],
+            tickPlacement: 'on'
+        },
+        yaxis: {
+            title: {
+                text: 'Number of Shifts',
+            },
+          tickAmount: 2
+        },
+        fill: {
+            type: 'gradient',
+            gradient: {
+                shade: 'light',
+                type: "horizontal",
+                shadeIntensity: 0.25,
+                gradientToColors: undefined,
+                inverseColors: true,
+                opacityFrom: 0.85,
+                opacityTo: 0.85,
+                stops: [50, 0, 100]
+            },
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart2"), options);
+    chart.render();
+</script>
+
+
+
+
+
+
+
+
+
 
 <div style="width: 500px; height: 500px;">
     <h3>Number Shifts per Week by Driver</h3>
     <canvas id="myChart"></canvas>
  </div>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
