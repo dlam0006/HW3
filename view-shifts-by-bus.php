@@ -1,5 +1,5 @@
 <div style="margin-top: 20px;">
-  <h1>Shifts by Bus</h1>
+  <h2>Shifts by Bus</h2>
 </div>
 
 <div class="table-responsive">
