@@ -64,7 +64,7 @@ include "css.php";
             title: {
                 text: 'Number of Shifts',
             },
-          tickAmount: 2
+          tickAmount: 3
         },
         fill: {
             type: 'gradient',
