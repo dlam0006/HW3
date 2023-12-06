@@ -69,7 +69,13 @@
   ?> 
 </div>
 
-<br /><br /><br />
+<br />
+
+<?php
+include "view-weekly-pay.php";
+?>
+    
+<br /><br />
 
 <div class="row">
   <div class="col">
