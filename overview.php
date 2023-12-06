@@ -1,13 +1,13 @@
 <?php
 require_once("util-db.php");
-require_once("model-visualizations-db.php");
+require_once("model-overview-db.php");
   
-$pageTitle = "Visualizations";
+$pageTitle = "Overview";
 include "view-header.php";
 $drivers = selectDrivers();
 $buses = selectBuses();
 $routes = selectRoutes();
 $days = selectDays();
-include "view-visualizations.php";
+include "view-overview.php";
 include "view-footer.php";
 ?>
