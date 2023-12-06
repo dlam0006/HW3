@@ -1,5 +1,4 @@
-
-<h1>Bus Driver Weekly Pay Calculator</h1>
+<h3>Driver Weekly Pay Calculator</h3>
 
     <label for="employeeId">Enter Employee ID:</label>
     <input type="text" id="employeeId" placeholder="Enter employee ID">
@@ -13,14 +12,14 @@
     <p id="result"></p>
 
     <script>
-        // Store hours worked for each employee
+
         const employeeHours = {
             '1': 8,
             '2': 11,
             '3': 6,
             '4': 17,
             '7': 5,
-            // Add more employees if needed
+
         };
 
         function fillHours() {
@@ -37,9 +36,9 @@
         }
 
 function calculateWeeklyPay(hoursWorked, employeeId) {
-            const hourlyRate = 16; // Default rate
+            const hourlyRate = 16;
 
-            // Check if predefined hours exist for the employee
+
             const predefinedHours = employeeHours[employeeId];
             const actualHours = predefinedHours || hoursWorked;
 
@@ -54,7 +53,6 @@ function calculateWeeklyPay(hoursWorked, employeeId) {
             const employeeId = employeeIdInput.value.trim();
             const hoursWorked = parseFloat(hoursWorkedInput.value);
 
-            // Check if both inputs are valid
             if (employeeId === '' || isNaN(hoursWorked)) {
                 resultParagraph.textContent = "Please enter valid information.";
             } else {
