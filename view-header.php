@@ -29,6 +29,9 @@
         <li class="nav-item">
           <a class="nav-link" href="drivers-with-shifts.php">Driver Shifts and Routes</a>
         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="visualizations.php">Overview and Salaries</a>
+        </li>
       </ul>
     </div>
   </div>
