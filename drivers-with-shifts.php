@@ -5,6 +5,7 @@ require_once("model-routes.php");
 
 $pageTitle = "Drivers with Shifts";
 include "view-header.php";
+include "css.php"
 
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
