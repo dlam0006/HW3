@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "Home";
 include "view-header.php";
+include "css.php"
 ?>
 
 <div class="container">
