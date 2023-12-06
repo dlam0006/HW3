@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row" style="margin-top: 20px;">
   <div class="col">
-    <h1>Drivers</h1>
+    <h2>Drivers</h2>
   </div>
   <div class="col-auto">
     <?php
