@@ -12,11 +12,11 @@
 include "css.php";
 ?>
 
-<h1>Analysis Visualizations</h1>
-
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-<h3>Number of Trips per Day</h3>
+<div style="margin-top: 20px;">
+  <h3>Number of Trips per Day</h3>
+</div>
   <div id="myChart2"></div>
 
   <script>
