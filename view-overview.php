@@ -1,61 +1,12 @@
-  <style>
-    .chart-container {
-      display: flex;
-      justify-content: space-between;
-    }
-    .chart-container > div {
-      flex: 1;
-    }
-  </style>
-
 <?php
 include "css.php";
 ?>
 
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <div style="margin-top: 20px;">
  <h1>Overview</h1>
 </div>
-
- <h3>Number of Trips per Day</h3>
-  <div id="myChart2"></div>
-
-  <script>
-    var data = [{
-      type: 'bar',
-      orientation: 'h',
-      x: [
-        <?php
-                while ($day = $days->fetch_assoc()) {
-                  echo $day['num_trips'] . ", ";
-            }
-            ?>
-      ],
-      y: [
-        <?php
-            $days = selectDays();
-                while ($day = $days->fetch_assoc()) {
-                  echo "'" . $day['shift_days'] . "', ";
-            }
-            ?>
-      ],
-      marker: {
-        color: 'rgba(75, 192, 192, 0.6)',
-        line: {
-          color: 'rgba(75, 192, 192, 1)',
-          width: 1
-        }
-      }
-    }];
-
-    var layout = {
-      xaxis: { title: 'Number of Trips' },
-      yaxis: { title: 'Days' }
-    };
-
-    Plotly.newPlot('myChart2', data, layout);
-  </script>
 
 <h3>Number of Trips a Bus Makes a Week</h3>
 <div id="chart"></div>
@@ -133,18 +84,14 @@ include "css.php";
     var chart = new ApexCharts(document.querySelector("#chart"), options);
     chart.render();
 </script>
-<div class="chart-container">
-    <div style="width: 500px; height: 500px;">
-      <h3>Number Shifts per Week by Driver</h3>
-      <canvas id="myChart"></canvas>
-    </div>
 
-    <div class="second-chart-container" style="margin-left: 60px;">
-    <h3>Route Count per Week</h3>
-    <div id="piechart" style="width: 600px; height: 600px;"></div>
-  </div>
-  
-  </div>
+
+
+<div style="width: 500px; height: 500px;">
+    <h3>Number Shifts per Week by Driver</h3>
+    <canvas id="myChart"></canvas>
+ </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -178,29 +125,5 @@ include "css.php";
 
 </script>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Route', 'Route Count'],
-          <?php
-                while ($route = $routes->fetch_assoc()) {
-                  echo "['Route " . $route['route_id'] . "', " . $route['route_count'] . "], ";
-            }
-            ?>
-        ]);
-
-        var options = {
-      chartArea: { width: '100%', height: '120%' },
-    };
-
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, options);
-      }
-    </script>
 
 
