@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg" style="background-color: #26A0FF;">
+      <nav class="navbar navbar-expand-lg" style="background-color: #EBF4FB;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Bellah Buses |</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
