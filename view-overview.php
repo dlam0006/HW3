@@ -15,8 +15,10 @@ include "css.php";
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <div style="margin-top: 20px;">
-  <h3>Number of Trips per Day</h3>
+ <h1>Overview</h1>
 </div>
+
+ <h3>Number of Trips per Day</h3>
   <div id="myChart2"></div>
 
   <script>
