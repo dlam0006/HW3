@@ -8,6 +8,10 @@
     }
   </style>
 
+<?php
+include "css.php";
+?>
+
 <h1>Analysis Visualizations</h1>
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
