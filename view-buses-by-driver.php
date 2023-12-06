@@ -1,4 +1,7 @@
-<h1>Buses by Driver</h1>
+<div style="margin-top: 20px;">
+  <h2>Buses by Driver</h2>
+</div>
+
 <div class="table-responsive">
   <table class="table">
     <thead>
