@@ -1,4 +1,7 @@
-<h1>Shifts by Bus</h1>
+<div style="margin-top: 20px;">
+  <h1>Shifts by Bus</h1>
+</div>
+
 <div class="table-responsive">
   <table class="table">
     <thead>
