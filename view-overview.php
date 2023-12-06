@@ -88,7 +88,7 @@ include "css.php";
 
 <!---------------------------------------->
 
-
+<br></br>
 <h3>Number Shifts per Week by Driver</h3>
 <div id="chart2"></div>
 
@@ -164,52 +164,3 @@ include "css.php";
     var chart = new ApexCharts(document.querySelector("#chart2"), options);
     chart.render();
 </script>
-
-
-
-
-
-
-
-
-
-
-<div style="width: 500px; height: 500px;">
-    <h3>Number Shifts per Week by Driver</h3>
-    <canvas id="myChart"></canvas>
- </div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
- 
-<script>
-  const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-    datasets: [{
-        data: [
-            <?php
-                while ($driver = $drivers->fetch_assoc()) {
-                  echo $driver['num_shifts'] . ", ";
-            }
-            ?>
-        ]
-    }],
-
-    labels: [
-            <?php
-            $drivers = selectDrivers();
-                while ($driver = $drivers->fetch_assoc()) {
-                  echo "'" . $driver['name'] . "', ";
-            }
-            ?>
-    ]
-}
-  });
-
-</script>
-
-
-
