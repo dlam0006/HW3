@@ -4,7 +4,7 @@ require_once("model-buses.php");
   
 $pageTitle = "Buses";
 include "view-header.php";
-include "css.php"
+include "css.php";
 
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
