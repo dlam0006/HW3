@@ -21,7 +21,7 @@ include "view-header.php";
     }
 
     img {
-        max-width: 150%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -42,7 +42,7 @@ include "view-header.php";
     <div style="margin-top: 20px;">
         <h2>Bellah Buses Resource Planning System</h2>
             <div style="text-align: center; margin-top: 20px;">
-                <img src="Logo_1.png" alt="Bus Transportation Image">
+                <img src="Logo.png" alt="Bus Transportation Image">
             </div>
         
         <h4>Site Naviagtion</h4>
