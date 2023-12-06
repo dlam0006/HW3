@@ -4,6 +4,7 @@ require_once("model-drivers.php");
   
 $pageTitle = "Drivers";
 include "view-header.php";
+include "css.php"
 
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
