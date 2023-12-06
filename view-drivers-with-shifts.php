@@ -161,7 +161,7 @@
 <br></br>
 
 <div id="map"></div>
-<h3>Map of Route</h3>
+<h3>Map of Routes</h3>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
     <script>
