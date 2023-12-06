@@ -1,3 +1,12 @@
+<head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+        }
+    </style>
+</head>
+
 <div class="row" style="margin-top: 20px;">
   <div class="col">
     <h1>Driver Shifts</h1>
