@@ -13,7 +13,7 @@
   <?php
       while ($driver = $drivers->fetch_assoc()) {
   ?>
-     <div class="card mb-3">
+     <div class="card">
         <div class="card-body">
           <h5 class="card-title"><?php echo $driver['name']; ?></h5>
           <p class="card-text">
